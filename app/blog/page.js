@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import { posts } from './posts/data'
 import Nav from '@/components/Nav'
