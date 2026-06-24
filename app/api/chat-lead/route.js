@@ -21,45 +21,44 @@ export async function POST(request) {
     goal: sanitizeInput(body.goal || ''),
     size: sanitizeInput(body.size || ''),
     contact: sanitizeInput(body.contact || ''),
-    timestamp: new Date().toISOString(),
   }
 
   console.log('[chat-lead]', JSON.stringify(lead))
 
-  // Forward to Jotform so it appears in the dashboard and triggers the email notification
   const apiKey = process.env.JOTFORM_API_KEY
-  if (apiKey) {
-    try {
-      const message = [
-        `Industry: ${lead.trade || 'Not specified'}`,
-        `Goal: ${lead.goal || 'Not specified'}`,
-        `Business size: ${lead.size || 'Not specified'}`,
-        `Contact: ${lead.contact || 'Not provided'}`,
-      ].join('\n')
-
-      // Extract email if present in contact field (simple heuristic)
-      const emailMatch = lead.contact.match(/[^\s@]+@[^\s@]+\.[^\s@]+/)
-      const email = emailMatch ? emailMatch[0] : 'no-email@chatbot.lead'
-
-      const params = new URLSearchParams({
-        apiKey,
-        'submission[1]': 'Chat Bot Lead',
-        'submission[2]': email,
-        'submission[4]': 'Unknown',
-        'submission[5]': `Chat Bot - ${lead.trade || 'General'}`,
-        'submission[6]': lead.trade || 'Not Sure',
-        'submission[7]': message,
-      })
-
-      await fetch('https://api.jotform.com/form/261737577809069/submissions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString(),
-      })
-    } catch (err) {
-      console.error('[chat-lead] Jotform forward failed:', err)
-    }
+  if (!apiKey) {
+    return Response.json({ success: true })
   }
 
-  return Response.json({ success: true })
+  try {
+    const emailMatch = lead.contact.match(/[^\s@]+@[^\s@]+\.[^\s@]+/)
+    const email = emailMatch ? emailMatch[0] : 'no-email@chatbot.lead'
+
+    const message = [
+      `Industry: ${lead.trade || 'Not specified'}`,
+      `Goal: ${lead.goal || 'Not specified'}`,
+      `Business size: ${lead.size || 'Not specified'}`,
+      `Contact: ${lead.contact || 'Not provided'}`,
+    ].join('\n')
+
+    const params = new URLSearchParams()
+    params.set('apiKey', apiKey)
+    params.set('submission[3][first]', 'Chat')
+    params.set('submission[3][last]', 'Lead')
+    params.set('submission[4]', email)
+    params.set('submission[6]', 'Chat Bot')
+    params.set('submission[9]', message)
+
+    const res = await fetch('https://api.jotform.com/form/261737577809069/submissions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params.toString(),
+    })
+
+    if (!res.ok) throw new Error(`Jotform returned ${res.status}`)
+    return Response.json({ success: true })
+  } catch (err) {
+    console.error('[chat-lead] Jotform forward failed:', err)
+    return Response.json({ error: 'Submission failed' }, { status: 500 })
+  }
 }

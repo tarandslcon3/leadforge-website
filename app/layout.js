@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import ScrollLine from '@/components/ScrollLine'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -8,12 +9,12 @@ export const metadata = {
   metadataBase: new URL('https://leadforge-website-inky.vercel.app'),
   title: 'AI Websites & Automation for Any Business | LeadForge',
   description:
-    'LeadForge builds AI-powered websites, automation and custom tools for any business across USA and Canada. Get a free consultation today.',
-  keywords: 'AI websites, business automation, lead generation, AI chatbot, web design agency, digital marketing USA Canada',
+    'LeadForge builds AI-powered websites, automation and custom tools for any business worldwide. Get a free consultation today.',
+  keywords: 'AI websites, business automation, lead generation, AI chatbot, web design agency, digital marketing',
   openGraph: {
     title: 'AI Websites & Automation for Any Business | LeadForge',
     description:
-      'LeadForge builds AI-powered websites, automation and custom tools for any business across USA and Canada.',
+      'LeadForge builds AI-powered websites, automation and custom tools for any business worldwide.',
     url: 'https://leadforge-website-inky.vercel.app',
     siteName: 'LeadForge',
     type: 'website',
@@ -22,8 +23,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'AI Websites & Automation for Any Business | LeadForge',
-    description:
-      'AI-powered websites, automation and custom tools for any business across USA and Canada.',
+    description: 'AI-powered websites, automation and custom tools for any business worldwide.',
   },
   alternates: {
     canonical: 'https://leadforge-website-inky.vercel.app',
@@ -34,8 +34,8 @@ const businessSchema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'LeadForge',
-  description: 'Digital agency building AI-powered websites, automation and custom tools for any business',
-  areaServed: ['United States', 'Canada'],
+  description: 'Digital agency building AI-powered websites, automation and custom tools for any business worldwide',
+  areaServed: 'Worldwide',
   serviceType: ['Web Design', 'AI Automation', 'Lead Generation', 'Digital Marketing', 'Business Automation'],
   url: 'https://leadforge-website-inky.vercel.app',
   email: 'tbstechservices@gmail.com',
@@ -66,15 +66,15 @@ const faqSchema = {
       name: 'What kinds of businesses do you build websites for?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We build AI-powered websites for any business across USA and Canada — small businesses, SaaS companies, e-commerce, finance, real estate, and more. Every site includes lead capture, instant SMS alerts, and automation workflows.',
+        text: 'We build AI-powered websites for any business worldwide — small businesses, SaaS companies, e-commerce, finance, real estate, law firms, restaurants, and more.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Do you serve clients in the USA?',
+      name: 'Do you work with international clients?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. We serve businesses across the entire United States and Canada, in any industry.',
+        text: 'Yes. We serve businesses worldwide. No matter where you are located, we can build and deliver your AI-powered website and automation system.',
       },
     },
     {
@@ -106,7 +106,7 @@ const faqSchema = {
       name: 'What industries do you work with?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We work with any business — small businesses, SaaS companies, e-commerce stores, real estate, finance, and more. Our sites are built to generate leads and grow any type of business.',
+        text: 'We work with any business — small businesses, SaaS companies, e-commerce stores, real estate, finance, law firms, restaurants, consultants, and more.',
       },
     },
     {
@@ -147,6 +147,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
+        <ScrollLine />
         {children}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>

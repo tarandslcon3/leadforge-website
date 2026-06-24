@@ -7,7 +7,6 @@ import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
 import ChatBot from '@/components/ChatBot'
-import CursorFollower from '@/components/CursorFollower'
 
 const Hero = dynamic(() => import('@/components/Hero'), {
   ssr: false,
@@ -26,7 +25,6 @@ export default function Home() {
       <div className="orb orb-2" />
       <div className="orb orb-3" />
       <LoadingScreen />
-      <CursorFollower />
       <main>
         <Nav />
         <Hero />

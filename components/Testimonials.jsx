@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 
 const testimonials = [
   {
@@ -35,6 +36,45 @@ function Stars({ count }) {
   )
 }
 
+function TestimonialCard({ t, index }) {
+  const { ref, isVisible } = useScrollReveal()
+  const isLeft = index % 2 === 0
+  const delay = `${index * 0.15}s`
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        transform: isVisible
+          ? 'perspective(1000px) rotateY(0deg) translateX(0px)'
+          : `perspective(1000px) rotateY(${isLeft ? -15 : 15}deg) translateX(${isLeft ? -30 : 30}px)`,
+        opacity: isVisible ? 1 : 0,
+        transition: `transform 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}, opacity 0.7s ease ${delay}`,
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+      className="glass-card rounded-2xl p-8"
+    >
+      <Stars count={t.stars} />
+      <p className="text-gray-300 leading-relaxed mb-8 flex-1">
+        &ldquo;{t.quote}&rdquo;
+      </p>
+      <div className="flex items-center gap-3 pt-6 border-t border-white/10">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#3b82f6] to-[#06b6d4] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+          {t.name[0]}
+        </div>
+        <div>
+          <div className="text-white font-semibold text-sm">{t.name}</div>
+          <div className="text-gray-500 text-xs">{t.role}</div>
+        </div>
+        <div className="ml-auto">
+          <span className="px-2 py-1 bg-[#1e2a4a] rounded text-xs text-gray-400">{t.trade}</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Testimonials() {
   return (
     <section id="testimonials" className="py-24 px-4 bg-[#060b18]">
@@ -59,31 +99,7 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="glass-card rounded-2xl p-8 flex flex-col"
-            >
-              <Stars count={t.stars} />
-              <p className="text-gray-300 leading-relaxed mb-8 flex-1">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="flex items-center gap-3 pt-6 border-t border-white/10">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#3b82f6] to-[#06b6d4] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                  {t.name[0]}
-                </div>
-                <div>
-                  <div className="text-white font-semibold text-sm">{t.name}</div>
-                  <div className="text-gray-500 text-xs">{t.role}</div>
-                </div>
-                <div className="ml-auto">
-                  <span className="px-2 py-1 bg-[#1e2a4a] rounded text-xs text-gray-400">{t.trade}</span>
-                </div>
-              </div>
-            </motion.div>
+            <TestimonialCard key={i} t={t} index={i} />
           ))}
         </div>
       </div>

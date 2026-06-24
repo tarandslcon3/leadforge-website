@@ -1,13 +1,14 @@
 'use client'
 import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 
 const cases = [
   {
     trade: 'HVAC',
     company: 'Summit Heating & Cooling',
     result: '+340% more online leads',
-    detail: 'Replaced an outdated WordPress site with an AI-powered system. Instant SMS lead alerts doubled their response speed.',
+    detail: 'Replaced an outdated site with an AI-powered system. Instant SMS lead alerts doubled their response speed.',
     stat1: { value: '340%', label: 'More leads' },
     stat2: { value: '2min', label: 'Avg response time' },
     color: '#3b82f6',
@@ -25,7 +26,7 @@ const cases = [
     trade: 'Roofing',
     company: 'Apex Roofing Group',
     result: '200+ Google reviews in 90 days',
-    detail: 'Automated post-job review requests sent by SMS. Combined with local SEO, they now rank #1 in their area.',
+    detail: 'Automated post-job review requests sent by SMS. Combined with SEO, they now rank #1 in their market.',
     stat1: { value: '200+', label: 'Google reviews' },
     stat2: { value: '#1', label: 'Local ranking' },
     color: '#8b5cf6',
@@ -33,51 +34,64 @@ const cases = [
 ]
 
 function CaseCard({ item, index }) {
+  const { ref: revealRef, isVisible } = useScrollReveal()
   const cardRef = useRef(null)
   const [tilt, setTilt] = useState({ x: 0, y: 0 })
 
   const handleMouseMove = (e) => {
-    const rect = cardRef.current.getBoundingClientRect()
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 12
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * -12
-    setTilt({ x: y, y: x })
+    const rect = cardRef.current?.getBoundingClientRect()
+    if (!rect) return
+    setTilt({
+      x: ((e.clientY - rect.top) / rect.height - 0.5) * -10,
+      y: ((e.clientX - rect.left) / rect.width - 0.5) * 10,
+    })
   }
 
+  const delay = `${index * 0.15}s`
+
   return (
-    <motion.div
-      ref={cardRef}
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: index * 0.15 }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={() => setTilt({ x: 0, y: 0 })}
+    <div
+      ref={revealRef}
       style={{
-        transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-        transition: 'transform 0.15s ease',
+        transform: isVisible
+          ? 'perspective(1000px) rotateY(0deg) translateX(0px)'
+          : `perspective(1000px) rotateY(20deg) translateX(-40px)`,
+        opacity: isVisible ? 1 : 0,
+        transition: `transform 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}, opacity 0.7s ease ${delay}`,
       }}
-      className="glass-card rounded-2xl p-8 cursor-default"
     >
       <div
-        className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold mb-6"
-        style={{ background: `${item.color}20`, color: item.color }}
+        ref={cardRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setTilt({ x: 0, y: 0 })}
+        style={{
+          transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+          transition: 'transform 0.15s ease',
+          height: '100%',
+        }}
+        className="glass-card rounded-2xl p-8 cursor-default"
       >
-        {item.trade}
-      </div>
-      <h3 className="text-xl font-bold text-white mb-2">{item.company}</h3>
-      <p className="text-gray-400 text-sm leading-relaxed mb-8">{item.detail}</p>
-      <div className="flex gap-6">
-        <div>
-          <div className="text-2xl font-black" style={{ color: item.color }}>{item.stat1.value}</div>
-          <div className="text-gray-500 text-xs mt-1">{item.stat1.label}</div>
+        <div
+          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold mb-6"
+          style={{ background: `${item.color}20`, color: item.color }}
+        >
+          {item.trade}
         </div>
-        <div className="w-px bg-white/10" />
-        <div>
-          <div className="text-2xl font-black" style={{ color: item.color }}>{item.stat2.value}</div>
-          <div className="text-gray-500 text-xs mt-1">{item.stat2.label}</div>
+        <h3 className="text-xl font-bold text-white mb-2">{item.company}</h3>
+        <p className="text-gray-400 text-sm leading-relaxed mb-8">{item.detail}</p>
+        <div className="flex gap-6">
+          <div>
+            <div className="text-2xl font-black" style={{ color: item.color }}>{item.stat1.value}</div>
+            <div className="text-gray-500 text-xs mt-1">{item.stat1.label}</div>
+          </div>
+          <div className="w-px bg-white/10" />
+          <div>
+            <div className="text-2xl font-black" style={{ color: item.color }}>{item.stat2.value}</div>
+            <div className="text-gray-500 text-xs mt-1">{item.stat2.label}</div>
+          </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
@@ -102,7 +116,7 @@ export default function Portfolio() {
             </span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto text-lg">
-            Real results from real businesses across the USA and Canada.
+            Real results from real businesses worldwide.
           </p>
         </motion.div>
 

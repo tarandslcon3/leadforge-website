@@ -4,14 +4,15 @@ import { motion } from 'framer-motion'
 import * as THREE from 'three'
 
 const TRUST_ITEMS = [
-  '⚡ AI-Powered Lead Capture',
-  '🏆 Trusted by Growing Businesses',
-  '📱 Mobile-First Design',
-  '🔔 Instant SMS Alerts',
-  '🤖 24/7 AI Chatbot',
-  '🌎 USA & Canada',
-  '📈 Proven ROI',
-  '⭐ 5-Star Results',
+  'Small Businesses',
+  'SaaS Startups',
+  'E-Commerce',
+  'Real Estate',
+  'Finance',
+  'Law Firms',
+  'Restaurants',
+  'Consultants',
+  'Worldwide',
 ]
 
 export default function Hero() {
@@ -133,6 +134,8 @@ export default function Hero() {
   }, [])
 
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+
+  // Duplicate for seamless loop
   const trustItems = [...TRUST_ITEMS, ...TRUST_ITEMS]
 
   return (
@@ -167,7 +170,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          We build AI-powered websites, automation and custom tools for any business across USA and Canada. Get a free demo in 24 hours.
+          We build AI-powered websites, automation and custom tools for any business worldwide. Get a free demo in 24 hours.
         </motion.p>
 
         <motion.div
@@ -191,6 +194,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
+      {/* Trust strip marquee */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -200,7 +204,8 @@ export default function Hero() {
       >
         <div className="marquee-track py-4">
           {trustItems.map((item, i) => (
-            <span key={i} className="inline-flex items-center gap-2 mx-8 text-gray-400 text-sm whitespace-nowrap">
+            <span key={i} className="inline-flex items-center mx-8 text-gray-400 text-sm whitespace-nowrap">
+              <span className="text-[#3b82f6] mr-2">—</span>
               {item}
             </span>
           ))}

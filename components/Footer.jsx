@@ -23,7 +23,7 @@ export default function Footer() {
               Lead<span className="text-[#3b82f6]">Forge</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Digital agency building websites, AI automation and custom tools for any business across USA and Canada.
+              Digital agency building websites, AI automation and custom tools for businesses worldwide.
             </p>
             <div className="flex flex-wrap gap-2">
               {['Small Business', 'SaaS', 'E-Commerce', 'Finance', 'Real Estate', 'Any Industry'].map((t) => (
@@ -83,7 +83,7 @@ export default function Footer() {
                   tbstechservices@gmail.com
                 </a>
               </li>
-              <li className="text-gray-400 text-sm">USA &amp; Canada</li>
+              <li className="text-gray-400 text-sm">Serving Clients Worldwide</li>
               <li className="pt-2">
                 <button
                   onClick={() => scrollTo('contact')}
@@ -98,7 +98,7 @@ export default function Footer() {
 
         <div className="border-t border-[#1e2a4a] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            © 2025 LeadForge — AI Automation and Websites for Any Business. Serving USA and Canada.
+            © 2025 LeadForge. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="text-gray-600 hover:text-gray-400 text-xs transition-colors">Privacy</Link>

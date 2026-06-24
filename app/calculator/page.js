@@ -4,7 +4,7 @@ import CalculatorClient from './CalculatorClient'
 
 export const metadata = {
   title: 'Business Leak Calculator | LeadForge',
-  description: 'Find out exactly how much money your trades business is leaking every month in time, leads, cash flow, and missed automation opportunities.',
+  description: 'Find out exactly how much money your business is leaking every month in time, leads, cash flow, and missed automation opportunities.',
 }
 
 export default function CalculatorPage() {
@@ -24,7 +24,7 @@ export default function CalculatorPage() {
               </span>
             </h1>
             <p className="text-gray-400 text-lg max-w-xl mx-auto">
-              Find out exactly how much money your trades business is leaking every month — and what it would take to fix it.
+              Find out exactly how much money your business is leaking every month — and what it would take to fix it.
             </p>
           </div>
           <CalculatorClient />
