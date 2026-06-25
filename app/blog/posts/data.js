@@ -1,5 +1,142 @@
 export const posts = [
   {
+    slug: 'how-to-build-a-website-for-your-small-business-free-guide-2026',
+    title: 'How to Build a Small Business Website in 2026 — The Honest Guide',
+    metaTitle: 'How to Build a Small Business Website in 2026',
+    metaDescription:
+      'Step by step guide to building a small business website in 2026. Free options, what to avoid, and when to hire a pro. Real advice that actually works.',
+    date: '2026-06-24',
+    readTime: '8 min read',
+    featuredColor: '#10b981',
+    excerpt:
+      'Most small business owners either overpay for a website that does nothing, or build one themselves and end up with something that embarrasses them. This guide gives you the honest truth about what works in 2026.',
+    content: `
+<p>Most small business owners are stuck in one of two traps. They either pay a web agency thousands of dollars for a site that looks great but does nothing for their actual business. Or they spend a weekend building something themselves, feel embarrassed every time they hand out a business card, and quietly hope nobody visits the link. This guide cuts through all of it and gives you the honest truth about what actually works in 2026 — whether you have zero budget or a proper one.</p>
+
+<h2>Why Your Website Matters More Than Ever in 2026</h2>
+<p>82% of consumers research a business online before they buy, call, or walk in. That number has been climbing every year. What's new in 2026 is that AI assistants — ChatGPT, Google AI Overviews, Perplexity — are now recommending specific businesses in response to questions like "best plumber near me" or "who builds websites for restaurants."</p>
+<p>If your website is weak, missing key information, or hard to navigate, AI systems skip you entirely. They recommend businesses with clear, well-structured, regularly updated websites. A bad website no longer just loses you a customer who bounces. It loses you every customer who asks an AI assistant for a recommendation instead of typing into a search bar.</p>
+<p>The silver lining: most of your competitors still have terrible websites. Getting yours right gives you an immediate, measurable edge.</p>
+
+<h2>Option 1 — Build It Yourself For Free (The Real Honest Breakdown)</h2>
+<p>Free website tools have gotten genuinely good in the last few years. Here's an honest look at the main options and exactly who each one is right for.</p>
+
+<h3>Google Sites — Completely Free</h3>
+<p><strong>Who it's for:</strong> Teams that need an internal wiki or a basic presence page with zero design requirements.</p>
+<p><strong>What it cannot do:</strong> Rank on Google in any meaningful way. Customise your URL without paying. Accept payments. Run a contact form that emails you directly. Look professional to a customer comparing you to a competitor.</p>
+<p><strong>Honest take:</strong> Google Sites is better than nothing, but only just. Use it if all you need is a page that says "we exist" with your phone number on it.</p>
+
+<h3>Wix Free Plan</h3>
+<p><strong>Who it's for:</strong> Small businesses that want something that looks decent quickly.</p>
+<p><strong>What it cannot do:</strong> Give you a custom URL — your site lives at yourbusiness.wix.com. Load quickly on mobile. Rank well on Google without significant extra effort.</p>
+<p><strong>Honest take:</strong> Looks better than Google Sites, but the Wix branding in your URL hurts credibility. A wix.com address on a business card sends the wrong message.</p>
+
+<h3>WordPress.com Free Plan</h3>
+<p><strong>Who it's for:</strong> People who already know WordPress and need a free placeholder.</p>
+<p><strong>What it cannot do:</strong> Install plugins on the free plan — which removes most of what makes WordPress powerful. Customise your theme beyond basic colours.</p>
+<p><strong>Honest take:</strong> Confusing for beginners. If you've never used WordPress before, this will frustrate you. Skip it unless you already know the platform.</p>
+
+<h3>Carrd — The Best Free Starting Point</h3>
+<p><strong>Who it's for:</strong> Freelancers, consultants, and small businesses who need a clean single-page site that works on mobile.</p>
+<p><strong>What it cannot do:</strong> Multi-page sites on the free plan. eCommerce. Blog.</p>
+<p><strong>Honest take:</strong> If you have more time than money and just need something basic online, Carrd is your best free starting point. Here is exactly how to set it up in one afternoon.</p>
+
+<h3>How to Set Up a Free Carrd Site in 5 Steps</h3>
+<ol>
+  <li><strong>Go to Carrd.co and click "Build Your Own."</strong> No account needed to start. Pick a template that matches your business type — there are dozens of clean, professional options.</li>
+  <li><strong>Replace every piece of placeholder text with your actual business information.</strong> Your name, what you do, who you help, and how to reach you. This takes about 20 minutes if you know what you want to say.</li>
+  <li><strong>Upload a real photo of yourself or your work.</strong> Stock photos hurt trust. Even a phone photo of your actual workspace or product is better than a generic image of a smiling stranger.</li>
+  <li><strong>Add a contact button that links to your email or phone number.</strong> On the free plan you cannot add a form that emails you automatically — a simple "Email Me" button works fine for now.</li>
+  <li><strong>Create your free Carrd account and publish.</strong> Your site will be at yourname.carrd.co. Share it everywhere. When you're ready to look more professional, a custom domain costs about $9–19 per year.</li>
+</ol>
+
+<h2>Option 2 — Build It Yourself Paid (When $10–30 Per Month Makes Sense)</h2>
+<p>Once you're ready to invest a small amount monthly, your options improve significantly.</p>
+
+<h3>Squarespace ($16/month)</h3>
+<p>The most beginner-friendly paid builder with genuinely beautiful templates. If you're not technical and you want something that looks professional without stress, Squarespace is the easiest path. The templates are designed by professionals and work well on mobile out of the box. Great for service businesses, photographers, consultants, and anyone who wants a great-looking site without touching code.</p>
+
+<h3>Webflow ($14/month)</h3>
+<p>More powerful than Squarespace but with a steeper learning curve. Webflow lets you build highly customised sites with animations and interactions that would normally require a developer. If you're willing to invest 10–15 hours learning the interface, you can build something genuinely impressive. Best for people who enjoy learning new tools and want full design control.</p>
+
+<h3>Shopify ($29/month)</h3>
+<p>Only relevant if you're selling physical or digital products online. Shopify is purpose-built for eCommerce and does it better than anyone else at this price point. If you're not selling products directly from your website, don't use Shopify — it's overkill and you'll pay for features you don't need.</p>
+
+<h2>Option 3 — Hire a Professional (When DIY Costs You More Than It Saves)</h2>
+<p>DIY makes sense when you have more time than money and your needs are simple. But there's a point where doing it yourself costs you more than hiring someone — you just might not realise it yet.</p>
+<p>Here are five signs you've crossed that line:</p>
+<ol>
+  <li>You've spent more than 20 hours on your website and it still isn't live.</li>
+  <li>Your website gets visitors but nobody calls or fills out a form.</li>
+  <li>You can't find your own business on Google when you search for what you offer.</li>
+  <li>Your site looks broken or cramped on mobile phones.</li>
+  <li>You have no idea how to add a contact form or booking system.</li>
+</ol>
+<p>If three or more of these apply, the math changes. A professional website that converts visitors into customers — one that ranks on Google and notifies you the moment someone enquires — pays for itself within weeks, not years. <a href="/#contact">We build free demos</a> so you can see exactly what's possible before committing to anything.</p>
+
+<h2>What Every Small Business Website Actually Needs in 2026</h2>
+<p>Whether you build it yourself or hire someone, here's what your website must have to actually work:</p>
+<ul>
+  <li><strong>A headline that explains what you do and who you help in one sentence.</strong> "We build custom furniture for homeowners" beats "Welcome to Johnson Woodworks" every time.</li>
+  <li><strong>A phone number or contact button visible without scrolling.</strong> If someone has to hunt for how to reach you, they won't.</li>
+  <li><strong>Your services listed clearly with plain English descriptions.</strong> Not industry jargon — what the customer actually gets.</li>
+  <li><strong>At least three real photos.</strong> Stock photos hurt trust. Real photos of your work, products, or team build it.</li>
+  <li><strong>A Google Maps embed or service area description</strong> if your business is location-based.</li>
+  <li><strong>An SSL certificate</strong> — the padlock in the browser bar. Without it, Google shows a "Not Secure" warning that kills conversions instantly.</li>
+  <li><strong>Pages that load in under 3 seconds on mobile.</strong> Over half of all web traffic is mobile. Slow sites get abandoned and penalised by Google.</li>
+  <li><strong>A contact form that actually sends you an email.</strong> Test this yourself regularly — broken contact forms are more common than you'd think.</li>
+  <li><strong>Basic SEO</strong> — your business name, location (if you're local), and main service in the page title and description.</li>
+  <li><strong>A privacy policy page.</strong> Legally required in most countries if you collect any visitor data at all.</li>
+</ul>
+<p>Not sure how much your current website is costing you in missed leads? Try the <a href="/calculator">Business Leak Calculator</a> — it estimates what slow websites and missed enquiries cost your business every year.</p>
+
+<h2>The 2026 Website Mistake That Is Killing Small Businesses</h2>
+<p>Here's the one nobody talks about: building a website and then doing nothing with it.</p>
+<p>A website is not a one-time project. It's a living thing. Google rewards websites that get updated regularly — new content, fresh information, active signals that the business is real and ongoing. A site that was last touched in 2023 ranks worse than one updated last month, all else being equal.</p>
+<p>Here's a simple monthly routine that takes less than an hour and keeps your site healthy:</p>
+<ul>
+  <li>Add one short blog post or update to your services page</li>
+  <li>Test your contact form by submitting it yourself</li>
+  <li>Respond to any new Google reviews</li>
+  <li>Update your hours or service list if anything has changed</li>
+</ul>
+<p>That's it. One hour a month keeps your site active and your rankings climbing. Most of your competitors won't bother — which means you will.</p>
+
+<h2>How Much Should a Small Business Website Actually Cost?</h2>
+<p>Here's an honest breakdown:</p>
+<ul>
+  <li><strong>DIY free (Carrd, Google Sites):</strong> $0 out of pocket but 40–80 hours of your time. Very limited SEO potential.</li>
+  <li><strong>DIY paid tools (Squarespace, Wix):</strong> Roughly $150–400 per year. You still invest 20–40 hours building and maintaining it.</li>
+  <li><strong>Freelancer (Fiverr or Upwork):</strong> $200–800 depending on scope. Quality varies wildly. Support often disappears after delivery. Good for simple sites.</li>
+  <li><strong>Local agency:</strong> $3,000–15,000 for a full custom build. Higher quality but longer timelines. Results depend entirely on the agency you choose.</li>
+  <li><strong>Specialised agency like TBS Tech Services:</strong> We build your demo first so you see exactly what you're getting before spending anything. <a href="/#contact">Contact us for a free quote.</a></li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can I build a free website for my small business that actually works?</h3>
+<p>Yes, but with real limitations. Free tools like Carrd or Google Sites get you online quickly at no cost. The honest limitation is SEO — free tools rarely rank well on Google, and most won't let you use a custom domain name without paying. If getting found on Google matters to your business (it probably does), a proper domain and basic hosting — around $150 per year — makes a significant difference. Think of the free option as a starting point, not a permanent solution.</p>
+
+<h3>How long does it take to build a small business website?</h3>
+<p>DIY with a tool like Squarespace takes most people a full weekend for a basic site. A professional agency typically delivers a complete site in 3 to 7 business days. The part that takes the longest is usually gathering your own content — real photos of your work, written descriptions of your services, and any testimonials you want to include. Have that ready before you start and you'll cut the timeline in half.</p>
+
+<h3>Do I need to know how to code to build a website?</h3>
+<p>Not anymore. Every major website builder in 2026 is drag and drop. If you can use Microsoft Word or Google Docs, you can build a basic website. Coding only matters if you need something custom — a client booking portal, a product configurator, a membership section, or specific integrations with other software. For a standard small business website, zero coding knowledge is required.</p>
+
+<h3>What is the most important thing a small business website needs?</h3>
+<p>A clear headline and a visible contact method. Most small business websites fail because visitors cannot figure out what the business does or how to get in touch within the first five seconds. If someone lands on your site and has to think about either of those things, you've already lost them. Fix those two things before worrying about design, colour, or anything else.</p>
+
+<h3>Should I hire someone to build my website or do it myself?</h3>
+<p>Do it yourself if you have time to spare, enjoy figuring out new software, and only need something simple — a few pages and basic contact info. Hire a professional if your website needs to generate leads or sales, if you've already tried DIY and got stuck, if your time is worth more per hour than what professional help would cost, or if you need features like booking systems, eCommerce, or automated follow-up. When in doubt, start with a free tool and upgrade once you know exactly what you need.</p>
+
+<div style="margin: 40px 0; padding: 32px; background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(6,182,212,0.1)); border: 1px solid rgba(59,130,246,0.3); border-radius: 16px; text-align: center;">
+  <p style="color: white; font-size: 18px; font-weight: 700; margin-bottom: 8px;">See what a professional site looks like for your business — before spending anything.</p>
+  <p style="color: #94a3b8; margin-bottom: 24px;">We build free demos. No cost, no obligation, just a clear picture of what's possible.</p>
+  <a href="/#contact" style="display: inline-block; padding: 14px 32px; background: #3b82f6; color: white; font-weight: 700; border-radius: 12px; text-decoration: none; font-size: 16px;">Get My Free Website Demo</a>
+</div>
+    `,
+  },
+  {
     slug: 'how-much-does-a-trades-website-cost',
     title: 'How Much Does a Trades Website Cost in 2025',
     metaTitle: 'Trades Website Cost in USA & Canada 2025',
