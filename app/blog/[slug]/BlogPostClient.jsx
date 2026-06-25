@@ -3,6 +3,14 @@ import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
+function scrollToContact() {
+  if (window.location.pathname === '/') {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+  } else {
+    window.location.href = '/#contact'
+  }
+}
+
 export default function BlogPostClient({ post, otherPosts }) {
   return (
     <>
@@ -46,12 +54,12 @@ export default function BlogPostClient({ post, otherPosts }) {
             <p className="text-gray-400 mb-6">
               We build a free demo for your specific business — no cost, no commitment, no pressure.
             </p>
-            <Link
-              href="/#demo"
-              className="inline-flex px-8 py-3 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-500 transition-colors"
+            <button
+              onClick={scrollToContact}
+              className="inline-flex px-8 py-3 bg-[#3b82f6] text-white font-bold rounded-xl hover:bg-blue-500 transition-colors cursor-pointer"
             >
               Get My Free Demo
-            </Link>
+            </button>
           </div>
 
           {otherPosts.length > 0 && (

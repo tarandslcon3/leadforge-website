@@ -72,7 +72,7 @@ export const posts = [
   <li>Your site looks broken or cramped on mobile phones.</li>
   <li>You have no idea how to add a contact form or booking system.</li>
 </ol>
-<p>If three or more of these apply, the math changes. A professional website that converts visitors into customers — one that ranks on Google and notifies you the moment someone enquires — pays for itself within weeks, not years. <a href="/#demo">We build free demos</a> so you can see exactly what's possible before committing to anything.</p>
+<p>If three or more of these apply, the math changes. A professional website that converts visitors into customers — one that ranks on Google and notifies you the moment someone enquires — pays for itself within weeks, not years. <a href="/#contact">We build free demos</a> so you can see exactly what's possible before committing to anything.</p>
 
 <h2>What Every Small Business Website Actually Needs in 2026</h2>
 <p>Whether you build it yourself or hire someone, here's what your website must have to actually work:</p>
@@ -109,7 +109,7 @@ export const posts = [
   <li><strong>DIY paid tools (Squarespace, Wix):</strong> Roughly $150–400 per year. You still invest 20–40 hours building and maintaining it.</li>
   <li><strong>Freelancer (Fiverr or Upwork):</strong> $200–800 depending on scope. Quality varies wildly. Support often disappears after delivery. Good for simple sites.</li>
   <li><strong>Local agency:</strong> $3,000–15,000 for a full custom build. Higher quality but longer timelines. Results depend entirely on the agency you choose.</li>
-  <li><strong>Specialised agency like TBS Tech Services:</strong> We build your demo first so you see exactly what you're getting before spending anything. <a href="/#demo">Contact us for a free quote.</a></li>
+  <li><strong>Specialised agency like TBS Tech Services:</strong> We build your demo first so you see exactly what you're getting before spending anything. <a href="/#contact">Contact us for a free quote.</a></li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
@@ -173,7 +173,7 @@ export const posts = [
 <p>A cheap website that fails to rank on Google and converts only 1% of visitors costs you more in lost business than a well-built AI-powered site that ranks on page one and converts at 8%. The question is never how much does the website cost — it's what is your return on investment.</p>
 
 <h2>The Bottom Line</h2>
-<p>Use our <a href="/calculator">free Business Leak Calculator</a> to put a real number on what slow load speeds and missed leads are costing you every year. Then <a href="/#demo">get a free demo</a> — a real website built for your specific business, no commitment, no pressure.</p>
+<p>Use our <a href="/calculator">free Business Leak Calculator</a> to put a real number on what slow load speeds and missed leads are costing you every year. Then <a href="/#contact">get a free demo</a> — a real website built for your specific business, no commitment, no pressure.</p>
     `,
   },
   {
@@ -214,7 +214,7 @@ export const posts = [
 <p>This is the most expensive mistake. What happens when someone fills out your form at 9pm and you don't see it until the next morning? They've already called three other companies. An AI-powered website with automation workflows sends an automatic SMS to the lead within two minutes, increasing lead-to-appointment rates by over 30%.</p>
 
 <h2>The Fix</h2>
-<p>Every one of these seven problems is fixable. Use our <a href="/calculator">free Business Leak Calculator</a> to see what your current site is costing you in missed calls — then <a href="/#demo">get a free demo</a> and see your phone start ringing within weeks.</p>
+<p>Every one of these seven problems is fixable. Use our <a href="/calculator">free Business Leak Calculator</a> to see what your current site is costing you in missed calls — then <a href="/#contact">get a free demo</a> and see your phone start ringing within weeks.</p>
     `,
   },
   {
@@ -248,7 +248,7 @@ export const posts = [
 <p>Automated review generation sends a text message to every customer 24 hours after their job is complete. That single automated message consistently generates a 25–35% review rate, compared to under 5% for manual follow-up.</p>
 
 <h2>Getting Started With AI for Your Plumbing Business</h2>
-<p>You do not need to understand AI to benefit from it. The first step is a website actually built to generate leads — not just look good. Then the automation layer: instant SMS, online scheduling, and review generation. <a href="/#demo">Get a free demo</a> — we build it for your specific business before you spend anything.</p>
+<p>You do not need to understand AI to benefit from it. The first step is a website actually built to generate leads — not just look good. Then the automation layer: instant SMS, online scheduling, and review generation. <a href="/#contact">Get a free demo</a> — we build it for your specific business before you spend anything.</p>
     `,
   },
   {
@@ -292,7 +292,7 @@ export const posts = [
 
 <h2>Protecting Your Business Going Forward</h2>
 <p>Use a business email address with two-factor authentication enabled. Educate any office staff on these red flags. Set up a policy that any change to payment details must be confirmed by a phone call. Consider a cybersecurity awareness training session for your team annually.</p>
-<p>TBS Tech Services builds websites and digital systems for any business. If you have questions about securing your online presence, <a href="/#demo">contact us for a free consultation</a>.</p>
+<p>TBS Tech Services builds websites and digital systems for any business. If you have questions about securing your online presence, <a href="/#contact">contact us for a free consultation</a>.</p>
     `,
   },
   {
@@ -336,7 +336,7 @@ export const posts = [
 <p><strong>How to protect yourself:</strong> Run a Google search for your own business name regularly. Consider running Google Ads on your own brand name to protect that real estate. If you find someone impersonating your business, report it to Google.</p>
 
 <h2>Staying Protected in 2025</h2>
-<p>The best protection is awareness and a professional digital presence. A legitimate, well-reviewed website with verified contact information makes it harder for scammers to impersonate you and easier for customers to verify you're real. <a href="/#demo">Contact us</a> to see what a trusted, professional web presence looks like for your business.</p>
+<p>The best protection is awareness and a professional digital presence. A legitimate, well-reviewed website with verified contact information makes it harder for scammers to impersonate you and easier for customers to verify you're real. <a href="/#contact">Contact us</a> to see what a trusted, professional web presence looks like for your business.</p>
     `,
   },
   {
@@ -375,7 +375,7 @@ export const posts = [
 
 <h2>What a High-Converting Trades Website Looks Like</h2>
 <p>It loads in under 1.5 seconds on mobile. It displays your phone number prominently. It shows your reviews and certifications immediately. It has a short lead capture form that sends you an SMS alert the moment someone submits. It ranks in your service area on Google. And it follows up automatically with anyone who fills out a form, even at midnight.</p>
-<p>This isn't complicated — but it does require building the site with the right priorities from day one. Use our <a href="/calculator">free Business Leak Calculator</a> to see exactly what your current site is costing you — then <a href="/#demo">get a free demo</a> built specifically for your business.</p>
+<p>This isn't complicated — but it does require building the site with the right priorities from day one. Use our <a href="/calculator">free Business Leak Calculator</a> to see exactly what your current site is costing you — then <a href="/#contact">get a free demo</a> built specifically for your business.</p>
     `,
   },
   {
@@ -419,7 +419,7 @@ export const posts = [
 
 <h2>How to Get Started</h2>
 <p>The fastest way to implement AI automation for a trades business is to start with a website built to support it — one that has lead capture, instant notifications, and the ability to connect to automation tools from day one. Most template websites cannot do this without significant modification.</p>
-<p><a href="/#demo">Get a free demo</a> and see exactly what AI automation could look like for your specific business. We build it before you spend anything.</p>
+<p><a href="/#contact">Get a free demo</a> and see exactly what AI automation could look like for your specific business. We build it before you spend anything.</p>
     `,
   },
 ]
