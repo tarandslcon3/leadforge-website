@@ -41,6 +41,9 @@ export const metadata = {
       follow: true,
     },
   },
+  verification: {
+    google: 'fhc8gFk18d93-WWZnhAR6_YKl_30rl4D7-9GCP3dmsY',
+  },
 }
 
 const businessSchema = {
@@ -163,22 +166,18 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ScrollLine />
         {children}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga4-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-              `}
-            </Script>
-          </>
-        )}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0NSPGYHK4G"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0NSPGYHK4G');
+          `,
+        }} />
       </body>
     </html>
   )
